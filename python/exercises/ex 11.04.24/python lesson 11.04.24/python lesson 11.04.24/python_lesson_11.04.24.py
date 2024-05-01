@@ -196,3 +196,65 @@
 # #                   3   2
 # #                   10  4
 # #                   10  5
+
+#_____________________________________________________
+
+nums = [10,3,5,3,2,5,3,5,6,2,4,-4]
+
+def is_sums_of_three_zero(nums):
+
+    nums.sort()
+    # [-20,-4, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 10]
+    print(nums)
+
+    for i in range(len(nums)):
+        left = 0
+        right = len(nums) - 1
+        while left < right:
+            if i == right or i == left:
+                left = left + 1
+                # continue
+            sum = nums[left] + nums[i] + nums[right]
+            if sum == 0:
+                # print(nums[left] , nums[i] , nums[right])
+                return True
+            elif sum > 0:
+                right = right - 1
+            else:
+                left = left + 1
+    return False
+
+print(is_sums_of_three_zero(nums))
+
+#__________________________________________________________
+
+for i in range(1,11):
+    for j in range(1,11):
+        print(i*j, end=" ")
+    print()
+    
+#___________________________________________________________
+
+# 123
+# 13
+def brothers(num1, num2):
+    num1 = str(num1)
+    num2 = str(num2)
+    if(num1[0] == num2[0] and num1[-1] == num2[-1]):
+        return True
+    return False
+
+def brothers2(num1, num2):
+    if num1 % 10 != num2 % 10:
+        return False
+    while num1 > 9:
+        num1 //= 10 # num1 = num1 // 10
+    while num2 > 9:
+        num2 //= 10
+    return num1 == num2
+        
+
+print(brothers2(123,13))
+print(brothers2(123,14))    
+
+    
