@@ -1,63 +1,63 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace ConsoleApp3
-{
-    internal class Program
-    {
-        static void Show(int[] m)
-        {
-            for (int i = 0; i < m.Length; i++)
-            {
-                Console.Write(m[i] + "  ");
-            }
-            Console.WriteLine();
-        }
-        static int What(int[] arr)
-        {
-            int x = arr[0];
-            int y = 0;
-            int z = 0;
-            for (int i = 1; i < arr.Length; i++)
-                if (arr[i] > x)
-                {
-                    z = y;
-                    y = x;
-                    x = arr[i];
-                }
-                else
-                    if (arr[i] > y)
-                {
-                    z = y;
-                    y = arr[i];
-                }
-                else
-                        if (arr[i] > z)
-                    z = arr[i];
-            /////////////
-            return x + y + z;
-        }
+//namespace ConsoleApp3
+//{
+//    internal class Program
+//    {
+//        static void Show(int[] m)
+//        {
+//            for (int i = 0; i < m.Length; i++)
+//            {
+//                Console.Write(m[i] + "  ");
+//            }
+//            Console.WriteLine();
+//        }
+//        static int What(int[] arr)
+//        {
+//            int x = arr[0];
+//            int y = 0;
+//            int z = 0;
+//            for (int i = 1; i < arr.Length; i++)
+//                if (arr[i] > x)
+//                {
+//                    z = y;
+//                    y = x;
+//                    x = arr[i];
+//                }
+//                else
+//                    if (arr[i] > y)
+//                {
+//                    z = y;
+//                    y = arr[i];
+//                }
+//                else
+//                        if (arr[i] > z)
+//                    z = arr[i];
+//            /////////////
+//            return x + y + z;
+//        }
 
-        static void Main(string[] args)
-        {
-            int[] arr = { 12, 13, 1, 10, 34, 20, 200 };
-            /*
-            x=13    34      34      200
-            y=12    13      20      34
-            z=10    12      13      20
+//        static void Main(string[] args)
+//        {
+//            int[] arr = { 12, 13, 1, 10, 34, 20, 200 };
+//            /*
+//            x=13    34      34      200
+//            y=12    13      20      34
+//            z=10    12      13      20
 
-            */
+//            */
 
-            Console.WriteLine(What(arr));
-            int r = What(arr);
-            Console.WriteLine(r);
-            Show(arr);
-        }
-    }
-}
+//            Console.WriteLine(What(arr));
+//            int r = What(arr);
+//            Console.WriteLine(r);
+//            Show(arr);
+//        }
+//    }
+//}
 /*
 
 byte   0 .......  2^8-1             1 bytes
@@ -263,28 +263,28 @@ long   -2^63 .......  2^63-1        8 bytes
 
 
 
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace ConsoleApp3
-//{
-//    internal class Program
-//    {
-//        static void Main(string[] args)
-//        {
-//            int[] a = new int[] { 44, 2, 3, 4, 7, 99, 66 };
-//            for (int i = 0; i < a.Length; i++)
-//            {
-//                //Console.WriteLine("{0}   {1}    {0}   boker tov ", i, a[i]);
-//                Console.WriteLine(i + "   " + a[i] + "   " + i + "  boker tov");
-//            }
-//            Console.WriteLine();
-//        }
-//    }
-//}
+namespace ConsoleApp3
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int[] a = new int[] { 44, 2, 3, 4, 7, 99, 66 };
+            for (int i = 0; i < a.Length; i++)
+            {
+                //Console.WriteLine("{0}   {1}    {0}   boker tov ", i, a[i]);
+                Console.WriteLine(i + "   " + a[i] + "   " + i + "  boker tov");
+            }
+            Console.WriteLine();
+        }
+    }
+}
 ///*
 
 //*/
@@ -371,28 +371,28 @@ long   -2^63 .......  2^63-1        8 bytes
 //    {
 //        static void Main(string[] args)
 //        {
-//            Console.Write("Enter a number^^^^^^^^^ : ");
+//            Console.Write("Enter a number : ");
 //            int r = int.Parse(Console.ReadLine());
 //            int sum = 0;
 //            while (r > 0)
 //            {
 //                sum += r % 10;
-//                r=r/10;
+//                r = r / 10;
 //            }
 //            Console.WriteLine(sum);
 //        }
 //    }
 //}
-///*
-//26587
-//7
-//8
-//5
-//6
-//2
+/*
+26587
+7
+8
+5
+6
+2
 
 
-//*/
+*/
 
 
 
@@ -408,9 +408,9 @@ long   -2^63 .......  2^63-1        8 bytes
 //    {
 //        static void Main(string[] args)
 //        {
-//            Console.Write("Enter a number^^^^^^^^^ : ");
+//            Console.Write("Enter a number^: ");
 //            int r = int.Parse(Console.ReadLine());
-//            while (r>0)
+//            while (r > 0)
 //            {
 //                int c = r;
 //                while (c > 0)
@@ -442,10 +442,10 @@ long   -2^63 .......  2^63-1        8 bytes
 //        static void Main(string[] args)
 //        {
 //            int r = 0;
-//            while (r<6)
+//            while (r < 6)
 //            {
 //                int c = 0;
-//                while (c<11)
+//                while (c < 11)
 //                {
 //                    Console.Write("*");
 //                    c++;
