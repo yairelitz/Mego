@@ -1,0 +1,7 @@
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\06.05.24\C# lesson 2\C# lesson 2\obj\Debug\C# lesson 2.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\06.05.24\C# lesson 2\C# lesson 2\obj\Debug\C# lesson 2.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\06.05.24\C# lesson 2\C# lesson 2\bin\Debug\C# lesson 2.exe.config
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\06.05.24\C# lesson 2\C# lesson 2\bin\Debug\C# lesson 2.exe
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\06.05.24\C# lesson 2\C# lesson 2\bin\Debug\C# lesson 2.pdb
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\06.05.24\C# lesson 2\C# lesson 2\obj\Debug\C# lesson 2.exe
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\06.05.24\C# lesson 2\C# lesson 2\obj\Debug\C# lesson 2.pdb

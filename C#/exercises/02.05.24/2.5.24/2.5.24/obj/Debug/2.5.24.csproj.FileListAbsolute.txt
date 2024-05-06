@@ -1,0 +1,7 @@
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\2.5.24\2.5.24\2.5.24\bin\Debug\2.5.24.exe.config
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\2.5.24\2.5.24\2.5.24\bin\Debug\2.5.24.exe
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\2.5.24\2.5.24\2.5.24\bin\Debug\2.5.24.pdb
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\2.5.24\2.5.24\2.5.24\obj\Debug\2.5.24.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\2.5.24\2.5.24\2.5.24\obj\Debug\2.5.24.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\2.5.24\2.5.24\2.5.24\obj\Debug\2.5.24.exe
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\2.5.24\2.5.24\2.5.24\obj\Debug\2.5.24.pdb
