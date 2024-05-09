@@ -136,8 +136,8 @@ long   -2^63 .......  2^63-1        8 bytes
 //        static void Main(string[] args)
 //        {
 //            int[] a = new int[22];
-//            a[0] = 20;
-//            a[1] = 50;
+//            a[0] = 1;
+//            a[1] = 2;
 //            for (int i = 2; i < a.Length; i++)
 //                a[i] = a[i - 1] + a[i - 2];
 //            Show(a);
@@ -211,15 +211,15 @@ long   -2^63 .......  2^63-1        8 bytes
 //        }
 //        static void Main(string[] args)
 //        {
-//            int i = 0;  
+//            int i = 0;
 //            int[] a = new int[] { 44, 2, 3, 4, 7, 99, 66 };
 //            int temp = a[0];
 //            for (i = 1; i < a.Length; i++)
 //            {
-//                a[i-1] = a[i];  
+//                a[i - 1] = a[i];
 //            }
-//            a[i] = temp;
-//            //a[a.Length-1] = temp;
+//           // a[i] = temp;
+//            a[a.Length-1] = temp;
 //            Show(a);
 //        }
 //    }
@@ -310,9 +310,9 @@ long   -2^63 .......  2^63-1        8 bytes
 //        {
 //            int r = 55;
 //            int c = 99;
-//            for (r = 0; r < 7; r++)        
+//            for (r = 0; r < 7; r++)
 //            {
-//                for (c = -1; c < r; c++)     
+//                for (c = -1; c < r; c++)
 //                {
 //                    Console.Write("* ");
 //                }
@@ -396,34 +396,34 @@ long   -2^63 .......  2^63-1        8 bytes
 
 
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace ConsoleApp3
-{
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
-            Console.Write("Enter a number : ");
-            int r = int.Parse(Console.ReadLine());
-            while (r > 0)
-            {
-                int c = r;
-                while (c > 0)
-                {
-                    Console.Write("*");
-                    c--;
-                }
-                Console.WriteLine();
-                r--;
-            }
-        }
-    }
-}
+//namespace ConsoleApp3
+//{
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
+//            Console.Write("Enter a number : ");
+//            int r = int.Parse(Console.ReadLine());
+//            while (r > 0)
+//            {
+//                int c = r;
+//                while (c > 0)
+//                {
+//                    Console.Write("*");
+//                    c--;
+//                }
+//                Console.WriteLine();
+//                r--;
+//            }
+//        }
+//    }
+//}
 
 
 

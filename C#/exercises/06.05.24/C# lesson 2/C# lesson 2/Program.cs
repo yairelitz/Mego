@@ -1,27 +1,27 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace ConsoleApp4
-//{
-//    internal class Program
-//    {
-//        static void F(int x)    //  x=     7965
-//        {
-//            if (x > 0)
-//            {
-//                F(x / 10);
-//                Console.WriteLine(x % 10);
-//            }
-//        }
-//        static void Main(string[] args)
-//        {
-//            F(783145);
-//        }
-//    }
-//}
+namespace ConsoleApp4
+{
+    internal class Program
+    {
+        static void F(int x)    //  x=     7965
+        {
+            if (x > 0)
+            {
+                F(x / 10);
+                Console.WriteLine(x % 10);
+            }
+        }
+        static void Main(string[] args)
+        {
+            F(783145);
+        }
+    }
+}
 /*
 7
 9
@@ -103,9 +103,9 @@
 //        {
 //            if (x > 0)
 //            {
-//                Console.WriteLine(x);           //  output - 2
+//                Console.WriteLine(x);           //  output  2
 //                F(x - 1);
-//                Console.WriteLine(x);           //  output - 2
+//                Console.WriteLine(x);           //  output  2
 //            }
 //        }
 //        static void Main(string[] args)
@@ -138,7 +138,7 @@
 //            if (x > 0)
 //            {
 //                F(x - 1);
-//                Console.WriteLine(x);           //  output - 2
+//                Console.WriteLine(x);           //  output  2
 //            }
 //        }
 //        static void F(int x)    //  x=1
@@ -146,7 +146,7 @@
 //            if (x > 0)
 //            {
 //                F(x - 1);
-//                Console.WriteLine(x);           //  output - 1
+//                Console.WriteLine(x);           //  output  1
 //            }
 //        }*/
 
@@ -155,7 +155,7 @@
 //            if (x > 0)
 //            {
 //                F(x - 1);
-//                Console.WriteLine(x);           //  output - 2
+//                Console.WriteLine(x);           //  output  2
 //            }
 //        }
 //        static void Main(string[] args)
@@ -164,7 +164,6 @@
 //        }
 //    }
 //}
-
 
 
 
@@ -180,13 +179,13 @@
 //{
 //    internal class Program
 //    {
-//        //      רקורסיא
+//        //     רקורסיא
 
 //        /*static void F(int x)    //  x=0
 //        {
 //            if (x > 0)
 //            {
-//                Console.WriteLine(x);           //  output - 2
+//                Console.WriteLine(x);           //  output  2
 //                F(x - 1);
 //            }
 //        }
@@ -194,7 +193,7 @@
 //        {
 //            if (x > 0)
 //            {
-//                Console.WriteLine(x);           //  output - 1
+//                Console.WriteLine(x);           //  output  1
 //                F(x - 1);
 //            }
 //        }*/
@@ -203,7 +202,7 @@
 //        {
 //            if (x > 0)
 //            {
-//                Console.WriteLine(x);           //  output - 2
+//                Console.WriteLine(x);           //  output  2
 //                F(x - 1);
 //            }
 //        }
@@ -252,13 +251,13 @@
 //                    left++;
 //                else
 //                    if (arr[right] > num)
-//                        right--;
-//                    else
-//                    {
-//                        int temp = arr[left];
-//                        arr[left] = arr[right];
-//                        arr[right] = temp;
-//                    }
+//                    right--;
+//                else
+//                {
+//                    int temp = arr[left];
+//                    arr[left] = arr[right];
+//                    arr[right] = temp;
+//                }
 //                Show(arr);
 //                Console.WriteLine(left + "  " + right);
 //                Console.WriteLine();
@@ -286,25 +285,25 @@
 //        }
 //        static bool F(int[] a)
 //        {
-//            if(a.Length%2!=0)
+//            if (a.Length % 2 != 0)
 //                return false;
 //            int count = 0;
-//            for (int i = 0;  i<a.Length; i++)
+//            for (int i = 0; i < a.Length; i++)
 //            {
 //                if (a[i] == 0)
 //                    return false;
-//                if (a[i]>0)
+//                if (a[i] > 0)
 //                    count++;
 //            }
-//            if(a.Length/2==count)
+//            if (a.Length / 2 == count)
 //                return true;
 //            return false;
 //        }
 //        static void Main(string[] args)
 //        {
-//            int[] a={ 18, 12, 10, 3, 12, 17, 1};
-//            int[] b={ 18, -12, -10, 3, -12, 17};
-//            bool res=F(a);
+//            int[] a = { 18, 12, 10, 3, 12, 17, 1 };
+//            int[] b = { 18, -12, -10, 3, -12, 17 };
+//            bool res = F(a);
 //            Console.WriteLine(res);
 //            Console.WriteLine(F(b));
 //        }
@@ -478,42 +477,42 @@
 
 
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace ConsoleApp4
-{
-    internal class Program
-    {
-        static void Show(int[] x)
-        {
-            for (int i = 0; i < x.Length; i++)
-                Console.Write(x[i] + "  ");
-            Console.WriteLine();
-        }
-        static void Main(string[] args)
-        {
-            //  a 1 2 3 4 5
-            //  b 99 88 77 66 55
-            //  c   1 2 3 4 5   55 66 77 88 99
-            int[] a = new int[5] { 1, 2, 3, 4, 5 };
-            Show(a);
-            int[] b = new int[5] { 99, 88, 77, 66, 55 };
-            Show(b);
-            int[] c = new int[a.Length + b.Length];
-            for (int i = 0; i < a.Length; i++)
-            {
-                c[i] = a[i];
-                c[i + a.Length] = b[a.Length - 1 - i];
-                c[c.Length - 1 - i] = b[i];
-            }
-            Show(c);
-        }
-    }
-}
+//namespace ConsoleApp4
+//{
+//    internal class Program
+//    {
+//        static void Show(int[] x)
+//        {
+//            for (int i = 0; i < x.Length; i++)
+//                Console.Write(x[i] + "  ");
+//            Console.WriteLine();
+//        }
+//        static void Main(string[] args)
+//        {
+//            //  a 1 2 3 4 5
+//            //  b 99 88 77 66 55
+//            //  c   1 2 3 4 5   55 66 77 88 99
+//            int[] a = new int[5] { 1, 2, 3, 4, 5 };
+//            Show(a);
+//            int[] b = new int[5] { 99, 88, 77, 66, 55 };
+//            Show(b);
+//            int[] c = new int[a.Length + b.Length];
+//            for (int i = 0; i < a.Length; i++)
+//            {
+//                c[i] = a[i];
+//                c[i + a.Length] = b[a.Length - 1 - i];
+//                c[c.Length - 1 - i] = b[i];
+//            }
+//            Show(c);
+//        }
+//    }
+//}
 
 
 
