@@ -79,19 +79,19 @@
 # print(m)
 
 # #------------------------------------------
-a=[                   # Prints the largest number from each column
-   [1,4,3,6,5,7],    
-   [4,3,6,5,7,9],    # output: 9,6,7,8,7,9
-   [3,6,5,7,5,1],
-   [9,3,7,5,7,1],
-   [5,3,6,8,7,6],
-]
-for c in range(len(a[0])):
-   max=a[0][c]
-   for r in range(1, len(a)):
-       if(a[r][c]>max):
-           max=a[r][c]
-   print(max)
+# a=[                   # Prints the largest number from each column
+#    [1,4,3,6,5,7],    
+#    [4,3,6,5,7,9],    # output: 9,6,7,8,7,9
+#    [3,6,5,7,5,1],
+#    [9,3,7,5,7,1],
+#    [5,3,6,8,7,6],
+# ]
+# for c in range(len(a[0])):
+#    max=a[0][c]
+#    for r in range(1, len(a)):
+#        if(a[r][c]>max):
+#            max=a[r][c]
+#    print(max)
 
 
 

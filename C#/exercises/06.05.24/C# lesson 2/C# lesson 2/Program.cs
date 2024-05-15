@@ -1,27 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace ConsoleApp4
-{
-    internal class Program
-    {
-        static void F(int x)    //  x=     7965
-        {
-            if (x > 0)
-            {
-                F(x / 10);
-                Console.WriteLine(x % 10);
-            }
-        }
-        static void Main(string[] args)
-        {
-            F(783145);
-        }
-    }
-}
+//namespace ConsoleApp4
+//{
+//    internal class Program
+//    {
+//        static void F(int x)    //  x=     783145
+//        {
+//            if (x > 0)
+//            {
+//                F(x / 10);
+//                Console.WriteLine(x % 10);
+//            }
+//        }
+//        static void Main(string[] args)
+//        {
+//            F(783145);
+//        }
+//    }
+//}
 /*
 7
 9
@@ -43,7 +43,7 @@ namespace ConsoleApp4
 //{
 //    internal class Program
 //    {
-//        static void F(int x)    //  x=
+//        static void F(int x)    //  x = 4
 //        {
 //            if (x > 1)
 //            {
@@ -53,12 +53,12 @@ namespace ConsoleApp4
 //                F(x - 1);
 //            }
 //            for (int i = 0; i < x; i++)
-//                    Console.Write("*");
+//                Console.Write("*");
 //            Console.WriteLine();
 //        }
 //        static void Main(string[] args)
 //        {
-//            F(14);
+//            F(8);
 //        }
 //    }
 //}
@@ -110,7 +110,7 @@ namespace ConsoleApp4
 //        }
 //        static void Main(string[] args)
 //        {
-//            F(9);
+//            F(2);
 //        }
 //    }
 //}
