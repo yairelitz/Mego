@@ -34,7 +34,7 @@
 #   log
 
 # #--------------------------------------------------------
-# r=((3,"safgsd",5),(7,7,7),(2))  ## Explanation of 'tapel'
+# #r=((3,"safgsd",5),(7,7,7),(2))  ## Explanation of 'tapel'
 # # a=(3,4,5)
 # # x=[2,4,a,66]
 
@@ -52,31 +52,31 @@
 
  
 # #---------------------------------------------------
-# a=[             #Counter of pairs of numbers (to the side and below)
-#    [1,4,4,6,5,7],
-#    [4,3,6,9,9,9],
-#    [3,6,5,7,9,1],
-#    [9,3,7,5,7,1],
-#    [5,3,6,6,7,6]
-# ]
-# m=0
-# for r in range(len(a)-1):
-#    for c in range(len(a[0])-1):
-#        if(a[r][c]==a[r][c+1]):
-#            m+=1
-#        if(a[r][c]==a[r+1][c]):
-#            m+=1
-#    #c+=1                    # option 1
-#    #if(a[r][c]==a[r+1][c]): #
-#    #    m+=1                #
+a=[             #Counter of pairs of numbers (to the side and below)
+   [1,4,4,6,5,7],
+   [4,3,6,9,9,9],
+   [3,6,5,7,9,1],
+   [9,3,7,5,7,1],
+   [5,3,6,6,7,6]
+]
+m=0
+for r in range(len(a)-1):
+   for c in range(len(a[0])-1):
+       if(a[r][c]==a[r][c+1]):
+           m+=1
+       if(a[r][c]==a[r+1][c]):
+           m+=1
+   #c+=1                    # option 1
+   #if(a[r][c]==a[r+1][c]): #
+   #    m+=1                #
  
-# for r in range(len(a)-1):                        # option 2
-#    if(a[r][len(a[0])-1]==a[r+1][len(a[0])-1]):  #
-#        m+=1                                     #
-# for c in range(len(a[0])-1):
-#    if(a[len(a)-1][c]==a[len(a)-1][c+1]):
-#        m+=1
-# print(m)
+for r in range(len(a)-1):                        # option 2
+   if(a[r][len(a[0])-1]==a[r+1][len(a[0])-1]):  #
+       m+=1                                     #
+for c in range(len(a[0])-1):
+   if(a[len(a)-1][c]==a[len(a)-1][c+1]):
+       m+=1
+print(m)
 
 # #------------------------------------------
 # a=[                   # Prints the largest number from each column

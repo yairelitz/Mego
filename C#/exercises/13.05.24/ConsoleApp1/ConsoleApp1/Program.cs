@@ -21,28 +21,28 @@
 //    }
 //}
 
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace ConsoleApp1
-//{
-//    internal class Program
-//    {
-//        static int SumDigits(int x)
-//        {
-//            if (x > 9)
-//                return x % 10 + SumDigits(x / 10);
-//            return x;
-//        }
-//        static void Main(string[] args)
-//        {
-//           Console.WriteLine(SumDigits(12345));
-//        }
-//    }
-//}
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static int SumDigits(int x)
+        {
+            if (x > 9)
+                return x % 10 + SumDigits(x / 10);
+            return x;
+        }
+        static void Main(string[] args)
+        {
+            Console.WriteLine(SumDigits(12345));
+        }
+    }
+}
 
 
 //using System;
