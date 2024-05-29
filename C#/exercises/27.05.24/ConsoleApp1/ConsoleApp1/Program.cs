@@ -39,34 +39,71 @@
 //        {
 //            while (first != null)
 //            {
-//                Console.WriteLine(first.GetValue());
+//                Console.Write(first.GetValue() + " ");
 //                first = first.GetNext();
 //            }
+//            Console.WriteLine();
+//            while (list.GetNext() != null)
+//                list = list.GetNext();
+//            list.SetNext(new A(lastVal, null));
 //        }
-//        static A BuildList()
+//        static void ShowEvensFirst(A list)
 //        {
-//            A o = new A(111, null);
-//            A ezer = o;
-//            Console.Write("More ? ");
-//            char yN = char.Parse(Console.ReadLine());
-//            while (yN != 'n')
+//            if (list != null)
 //            {
-//                A t = new A(rnd.Next(11, 77), null);
-//                ezer.SetNext(t);
-//                ezer = ezer.GetNext();
-//                Console.Write("More ? ");
-//                yN = char.Parse(Console.ReadLine());
+//                if (list.GetValue() % 2 == 0)
+//                    Console.Write(list.GetValue() + "  ");
+//                ShowEvensFirst(list.GetNext());
+//                if (list.GetValue() % 2 == 1)
+//                    Console.Write(list.GetValue() + "  ");
 //            }
-//            return o;
+//        }
+//        static void RevList(A list)
+//        {
+//            A ezer = new A(111, null);
+//            while (list.GetNext() != null)
+//            {
+//                A ezerFirst = ezer.GetNext();
+//                ezer.SetNext(list.GetNext());
+//                list.SetNext(list.GetNext().GetNext());
+//                ezer.GetNext().SetNext(ezerFirst);
+//            }
+//            list.SetNext(ezer.GetNext());
+//            ezer.SetNext(null);
+//        }
+//        static void AddAfterBiggest(A list, int newVal)
+//        {
+
 //        }
 //        static void Main(string[] args)
 //        {
 //            A l1 = BuildList();
 //            Show(l1);
+//            RevList(l1);
+//            Show(l1);
+//            //ShowEvensFirst(l1);
+//            //DelThird(l1);
+//            //Console.WriteLine();
+//            //AddToLast(l1, 3333);
+//            //Show(l1);
 //        }
+//        //  111     1 2 3 4
+//        //  111     4 3 2 1
+
 //    }
 //}
 /*
+a   111 2 5 4 7 6 8 9 3 333
+
+
+
+
+
+b   111
+
+b כראשון ב a שם את הראשון ב
+
+
 הקצאת זיכרון סטטית
 הקצאת זיכרון דינמית
 */
@@ -306,53 +343,52 @@
 
 
 
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace ConsoleApp10
-{
-    class A
-    {
-        int b;
-        public A(int b)
-        {
-            this.b = b;
-        }
-    }
-    internal class Program
-    {
-        static void Main(string[] args)
-        {
+//namespace ConsoleApp10
+//{
+//    class A
+//    {
+//        int b;
+//        public A(int b)
+//        {
+//            this.b = b;
+//        }
+//    }
+//    internal class Program
+//    {
+//        static void Main(string[] args)
+//        {
 
-            int g = 9;
-            int[] m = new int[55]; m[5] = 33;
-            A a1 = new A(44);
-            Console.Write("Enter a number : ");
-            int size = int.Parse(Console.ReadLine());
-            A[] v = new A[size];
-            while (size > 0)
-            {
-                v[size] = new A(77);
-                size--;
-            }
-        }
-    }
-}
-/*
-הקצאת זיכרון סטטית
-הקצאת זיכרון דינמית
-
-
+//            int g = 9;
+//            int[] m = new int[55]; m[5] = 33;
+//            A a1 = new A(44);
+//            Console.Write("Enter a number : ");
+//            int size = int.Parse(Console.ReadLine());
+//            A[] v = new A[size];
+//            while (size > 0)
+//            {
+//                v[size] = new A(77);
+//                size--;
+//            }
+//        }
+//    }
+//}
+///*
+//הקצאת זיכרון סטטית
+//הקצאת זיכרון דינמית
 
 
 
 
 
-//*
 
+
+//*/
 //using System;
 //using System.Collections.Generic;
 //using System.Linq;
@@ -398,6 +434,51 @@ namespace ConsoleApp10
 //                first = first.GetNext();
 //            }
 //            Console.WriteLine();
+//        }
+//        static A BuildList()
+//        {
+//            A o = new A(111, null); //  SRAK
+//            A ezer = o;
+//            Console.Write("More ? ");
+//            char yN = char.Parse(Console.ReadLine());
+//            while (yN != 'n')
+//            {
+//                A t = new A(rnd.Next(11, 77), null);
+//                ezer.SetNext(t);
+//                ezer = ezer.GetNext();
+//                Console.Write("More ? ");
+//                yN = char.Parse(Console.ReadLine());
+//            }
+//            return o;
+//        }
+//        static int SumList(A list)
+//        {
+//            int sum = 0;
+//            while (list != null)
+//            {
+//                sum += list.GetValue();
+//                list = list.GetNext();
+//            }
+//            return sum;
+//        }
+//        static void ShowRec(A list)
+//        {
+//            if (list != null)
+//            {
+//                ShowRec(list.GetNext());
+//                Console.WriteLine(list.GetValue());
+//            }
+//        }
+//        static void DelThird(A list)
+//        {
+//            A list2 = list.GetNext();
+//            list2 = list2.GetNext();    //  5
+//            list = list2.GetNext();     //  4
+//            list2.SetNext(list.GetNext());
+//            list.SetNext(null);
+//        }
+//        static void AddToLast(A list, int lastVal)
+//        {
 //            while (list.GetNext() != null)
 //                list = list.GetNext();
 //            list.SetNext(new A(lastVal, null));
@@ -444,3 +525,15 @@ namespace ConsoleApp10
 //        }
 //        //  111     1 2 3 4
 //        //  111     4 3 2 1
+//    }
+//}
+///*
+//a   111 2 5 4 7 6 8 9 3 333
+
+
+
+
+
+//b   111
+
+//b כראשון ב a שם את הראשון ב
