@@ -1,0 +1,2 @@
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\23.05.24\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\23.05.24\ConsoleApp1\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache

@@ -1,0 +1,14 @@
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24\09.05.24\09.05.24\bin\Debug\09.05.24.exe.config
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24\09.05.24\09.05.24\bin\Debug\09.05.24.exe
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24\09.05.24\09.05.24\bin\Debug\09.05.24.pdb
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24\09.05.24\09.05.24\obj\Debug\09.05.24.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24\09.05.24\09.05.24\obj\Debug\09.05.24.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24\09.05.24\09.05.24\obj\Debug\09.05.24.exe
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24\09.05.24\09.05.24\obj\Debug\09.05.24.pdb
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24 recortion\09.05.24\09.05.24\bin\Debug\09.05.24.exe.config
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24 recortion\09.05.24\09.05.24\bin\Debug\09.05.24.exe
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24 recortion\09.05.24\09.05.24\bin\Debug\09.05.24.pdb
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24 recortion\09.05.24\09.05.24\obj\Debug\09.05.24.csproj.AssemblyReference.cache
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24 recortion\09.05.24\09.05.24\obj\Debug\09.05.24.csproj.CoreCompileInputs.cache
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24 recortion\09.05.24\09.05.24\obj\Debug\09.05.24.exe
+C:\Users\user\OneDrive\שולחן העבודה\Mego\C#\exercises\09.05.24 recortion\09.05.24\09.05.24\obj\Debug\09.05.24.pdb

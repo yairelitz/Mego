@@ -24,16 +24,16 @@
 
 
 
-# a=[456,102,67834,1009,876,45]
-#         #a=[6,2,8,9,8,5]        The largest number in any index 
-# for i in range(len(a)):
-#     max=0
-#     while(a[i]>0):
-#         if(max<a[i]%10):
-#             max=a[i]%10
-#         a[i]=a[i]//10
-#     a[i]=max
-# print(a)    
+a=[456,102,90804,1009,876,45]
+        #a=[6,2,8,9,8,5]        The largest number in any index 
+for i in range(len(a)):
+    max=0
+    while(a[i]>0):
+        if(max<a[i]%10):
+            max=a[i]%10
+        a[i]=a[i]//10
+    a[i]=max
+print(a)    
 
 
 
@@ -52,12 +52,12 @@
 
 
 
-a=[456,102,67834,1009,876,45]
-#a=[4,1,6,9,8,4]              Only the left digit
-for i in range(len(a)):
-    while(a[i]>9):
-        a[i]=a[i]//10
-print(a)    
+# a=[456,102,67834,1009,876,45]
+# #a=[4,1,6,9,8,4]              Only the left digit
+# for i in range(len(a)):
+#     while(a[i]>9):
+#         a[i]=a[i]//10
+# print(a)    
 
 
 
@@ -159,7 +159,7 @@ print(a)
 #             b-=1
 #     return r
 
-# print(Mul(5, 6))
+# print(Mul(9, 6))
 # print(Mul(5, 6))
 
 
@@ -170,14 +170,14 @@ print(a)
 #     print(d, r)
 #     r+=1
 # print((d+r), r)
-# #   d=0     1   3   6   10  
-# #   r=1     2   3   4   5  
+#   d=0     1   3   6   10  
+#   r=1     2   3   4   5  
 
-# #                   1   1
-# #                   3   2
-# #                   3   2
-# #                   10  4
-# #                   10  5
+#                   1   1
+#                   3   2
+#                   3   2
+#                   10  4
+#                   10  5
 
 #_____________________________________________________
 
@@ -209,8 +209,8 @@ print(a)
 # print(is_sums_of_three_zero(nums))
 
 # #__________________________________________________________
-
-# for i in range(1,11):
+                                              #  multification table
+# for i in range(1,11):                      
 #     for j in range(1,11):
 #         print(i*j, end=" ")
 #     print()
@@ -237,6 +237,49 @@ print(a)
         
 
 # print(brothers2(123,13))
-# print(brothers2(123,14))    
+# print(brothers2(123,14))  
 
+
+
+# def Div(x,y):
+#     if x%y == 0:
+#         return("good")
+#     return("not good")
+# x=9
+# y=3
+# print(Div(x,5))
+
+#---------------------------------------------------------------
+
+# def Solution_1(a):     # How many odd numbers are there, and sum of all even numbers 
+#     c=0
+#     s=0
+#     for i in range(len(a)):
+#         if a[i]%2!=0:
+#             c+=1
+#         else: s=s+a[i]
+#     print(c)
+#     print(s)
+
+#--------------------------------------------------------
     
+# a=[1,4,3,9,7,14]
+# print(Solution_1(a))
+
+# s=23
+# a=[1,2,3,4,5,6]
+# for i in range(len(a)):
+#     b[i]=a[i-1]
+# print(b)
+
+
+# a=[1,2,3,4,5,6,7,8,9]
+# s=-2
+# d=a[0]
+# e=[0,0,0,0,0,0,0,0,0]
+# for i in range(a[]):
+#     e[s]=a[i]
+#     s+=1
+#     e[-1]=d
+# print(a)
+# print(e)

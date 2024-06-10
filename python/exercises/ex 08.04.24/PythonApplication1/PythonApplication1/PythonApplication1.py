@@ -52,31 +52,31 @@
 
  
 # #---------------------------------------------------
-a=[             #Counter of pairs of numbers (to the side and below)
-   [1,4,4,6,5,7],
-   [4,3,6,9,9,9],
-   [3,6,5,7,9,1],
-   [9,3,7,5,7,1],
-   [5,3,6,6,7,6]
-]
-m=0
-for r in range(len(a)-1):
-   for c in range(len(a[0])-1):
-       if(a[r][c]==a[r][c+1]):
-           m+=1
-       if(a[r][c]==a[r+1][c]):
-           m+=1
-   #c+=1                    # option 1
-   #if(a[r][c]==a[r+1][c]): #
-   #    m+=1                #
+# a=[             #Counter of pairs of numbers (to the side and below)
+#    [1,4,4,6,5,7],
+#    [4,3,6,9,9,9],
+#    [3,6,5,7,9,1],
+#    [9,3,7,5,7,1],
+#    [5,3,6,6,7,6]
+# ]
+# m=0
+# for r in range(len(a)-1):
+#    for c in range(len(a[0])-1):
+#        if(a[r][c]==a[r][c+1]):
+#            m+=1
+#        if(a[r][c]==a[r+1][c]):
+#            m+=1
+#    #c+=1                    # option 1
+#    #if(a[r][c]==a[r+1][c]): #
+#    #    m+=1                #
  
-for r in range(len(a)-1):                        # option 2
-   if(a[r][len(a[0])-1]==a[r+1][len(a[0])-1]):  #
-       m+=1                                     #
-for c in range(len(a[0])-1):
-   if(a[len(a)-1][c]==a[len(a)-1][c+1]):
-       m+=1
-print(m)
+# for r in range(len(a)-1):                        # option 2
+#    if(a[r][len(a[0])-1]==a[r+1][len(a[0])-1]):  #
+#        m+=1                                     #
+# for c in range(len(a[0])-1):
+#    if(a[len(a)-1][c]==a[len(a)-1][c+1]):
+#        m+=1
+# print(m)
 
 # #------------------------------------------
 # a=[                   # Prints the largest number from each column
@@ -131,7 +131,7 @@ print(m)
 #        right-=1
 #        left+=1
 
-# a=[1,2,3,4,5,6,7]
+# a=[1,2,3,4,5,6,7,8,9]
 # print(a)
 # Mirror(a)
 # print(a)
@@ -140,3 +140,52 @@ print(m)
 # Mirror(b)
 # print(b)
 # #  7,6,5,4,3,2,1
+
+
+
+
+# a=[2345,34,19876,5,666]
+# for i in range(len(a)):
+#     c=0
+#     while(a[i]>0):
+#         c+=1
+#         a[i]=a[i]//10
+#     a[i]=c
+# print(a)
+
+
+# a=[2345,54,7891,553,2,900]
+# for i in range(len(a)):
+#     while(a[i]>9):
+#         a[i]=a[i]//10
+# print(a)
+
+# a=[12345,789,9000,54]
+# print(a)
+# for i in range(len(a)):
+#     sum=0
+#     while(a[i]>0):
+#         sum=sum+a[i]%10
+#         a[i]=a[i]//10
+#     a[i]=sum
+# print(a)
+
+# a=[3481,45,110,765,123456]
+# for i in range(len(a)):
+#     max=0
+#     while(a[i]>0):
+#         if a[i]%10>max:
+#             max=a[i]%10
+#         a[i]=a[i]//10
+#     a[i]=max
+# print(a)
+
+
+def Jol(x):           # recortion
+    if x > 0:
+        Jol(x-1)
+    print(x)
+     
+    
+Jol(6)
+    

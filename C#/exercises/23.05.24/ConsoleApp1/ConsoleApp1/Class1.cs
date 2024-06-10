@@ -181,35 +181,36 @@
 
 //////////////////////////////////////////////////////////////////////////////////////
 
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-//namespace ConsoleApp9
-//{
-//    internal class Song
-//    {
-//        string name;
-//        string by;
-//        int time;
-//        public Song(string name, string by, int time)
-//        {
-//            this.name = name;
-//            this.by = by;
-//            this.time = time;
-//        }
-//        public void SetName(string name) { this.name = name; }
-//        public void SetBy(string by) { this.by = by; }
-//        public void SetTime(int time) { this.time = time; }
-//        public string GetName() { return this.name; }
-//        public string GetBy() { return this.by; }
-//        public int GetTime() { return this.time; }
-//        public override string ToString() { return this.name + " " + this.by + " " + this.time; }
-//        public string Status() { return this.by + "/" + this.name + ":" + this.time; }
-//    }
-//}
+namespace ConsoleApp9
+{
+    internal class Song
+    {
+        string name;
+        string by;
+        int time;
+        public Song(string name, string by, int time)
+        {
+            this.name = name;
+            this.by = by;
+            this.time = time;
+        }
+        public void SetName(string name) { this.name = name; }
+        public void SetBy(string by) { this.by = by; }
+        public void SetTime(int time) { this.time = time; }
+        public string GetName() { return this.name; }
+        public string GetBy() { return this.by; }
+        public int GetTime() { return this.time; }
+        public override string ToString() { return this.name + " " + this.by + " " + this.time; }
+        public string Status() { return this.by + "/" + this.name + ":" + this.time; }
+    }
+}
+
 
 ///////////////////////////////////////////////////////////////////
 
